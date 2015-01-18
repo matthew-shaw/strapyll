@@ -2,9 +2,9 @@ Strapyll
 ===================
 [![Build Status](https://travis-ci.org/MashSoftware/strapyll.svg?branch=master)](https://travis-ci.org/MashSoftware/strapyll)
 
-Strapyll is a HTML toolkit that brings together some of the most popular and easy to use website templating, generation, styling, testing, deployment and hosting components.
+Create and maintain beautiful, responsive, mobile-first websites and blogs with ease. Strapyll is a frontend toolkit that enables you to focus on creating content.
 
-The aim is to allow you to focus on the most important thing; your content.
+Strapyll integrates some of the most popular generation, templating, styling, testing, deployment, versioning and hosting solutions so you dont have to!
 
 Made with [Jekyll](http://jekyllrb.com/), [Bootstrap](http://getbootstrap.com/), [Bootswatch](http://bootswatch.com/) & [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
