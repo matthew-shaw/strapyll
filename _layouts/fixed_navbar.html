@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  {% include head.html %}
+  <style>{% include css/fixed_navbar.css %}</style>
+</head>
+
+<body>
+  {% include fixed_navbar.html %}
+
+  <div class="container">
+    {{ content }}
+  </div>
+
+  {% include scripts.html %}
+</body>
+
+</html>
