@@ -2,17 +2,15 @@
 <html lang="en-GB">
 <head>
   {% include head.html %}
-  <style>{% include css/navbar_footer.css %}</style>
+  <style>{% include css/navbar.css %}</style>
 </head>
 
 <body>
-  {% include fixed_navbar.html %}
-
   <div class="container">
+    {% include navbar.html %}
     {{ content }}
   </div>
 
-  {% include footer.html %}
   {% include scripts.html %}
 </body>
 
