@@ -3,8 +3,13 @@ layout: navbar_sidebar
 ---
 {% for team in site.data.teams.teams %}
 <h1><i class="fa fa-users fa-fw"></i> {{ team.name }}</h1>
-<p>Project: {{ team.project }}</p>
-<p>Phase: {{ team.phase }}</p>
+<h4>Project: {{ team.project }}
+  {% case team.phase %}
+    {% when 'Discovery' %}<span class="label label-danger">{{ team.phase }}</span>
+    {% when 'Alpha' %} <span class="label label-warning">{{ team.phase }}</span>
+    {% when 'Beta' %} <span class="label label-primary">{{ team.phase }}</span>
+    {% when 'Live' %} <span class="label label-success">{{ team.phase }}</span>
+  {% endcase %}</h4>
 {% if team.email %}<p>Email: <a href="mailto:{{ team.email }}{{ site.email_domain }}"><i class="fa fa-envelope fa-fw"></i></a></p>{% endif %}
 {% if team.slack %}<p>Slack Channel: <a href="{{ site.slack_url }}{{ team.slack }}"><i class="fa fa-slack fa-fw"></i></a></p>{% endif %}
 
