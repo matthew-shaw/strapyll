@@ -8,7 +8,7 @@ layout: navbar_sidebar
 {% if team.email %}<p>Email: <a href="mailto:{{ team.email }}{{ site.email_domain }}"><i class="fa fa-envelope fa-fw"></i></a></p>{% endif %}
 {% if team.slack %}<p>Slack Channel: <a href="{{ site.slack_url }}{{ team.slack }}"><i class="fa fa-slack fa-fw"></i></a></p>{% endif %}
 
-<h2>Members ({{ team.members | size }})</h2>
+<h2>Members <span class="badge">{{ team.members | size }}</span></h2>
 <div class="row">
   {% assign members = team.members | sort: "name" %}
   {% for member in members %}
