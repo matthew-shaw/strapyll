@@ -1,7 +1,7 @@
 <div class="col-sm-3 col-md-2 sidebar">
   <ul class="nav nav-sidebar">
     {% for team in site.data.teams.teams %}
-    <li><a href="/{{ team.name }}">{{ team.name }}</a></li>
+    <li><a href="/{{ team.name }}"><i class="fa fa-users fa-fw"></i> {{ team.name }}</a></li>
     {% endfor %}
   </ul>
 </div>

@@ -1,80 +1,64 @@
 {
   "teams": [
     {
-      "name": "Alpha",
+      "name": "Delta",
       "project": "P316 Workflow",
       "phase": "Discovery",
+      "email": "workflow-team",
+      "slack": "workflow",
       "members": [
         {
           "name": "Matthew Shaw",
           "role": "Developer",
-          "email": "matthew.shaw@digital.landregistry.gov.uk",
-          "twitter": "matthew-shaw",
+          "email": "matthew.shaw",
+          "twitter": "MattShaw85",
           "github": "matthew-shaw",
           "slack": "matthew-shaw"
         },
         {
           "name": "Simon Tsang",
           "role": "Developer",
-          "email": "simon.tsang@digital.landregistry.gov.uk",
-          "twitter": "milkypoo",
-          "github": "milkypoo",
-          "slack": "milkypoo"
+          "email": "simon.tsang",
+          "github": "tsangsimon",
+          "slack": "simontsang"
         },
         {
           "name": "Paul Trelease",
           "role": "Developer",
-          "email": "paul.trelease@digital.landregistry.gov.uk",
-          "twitter": "treacle",
-          "github": "treacle",
-          "slack": "treacle"
+          "email": "paul.trelease",
+          "twitter": "PaulTrelease",
+          "github": "ptrelease",
+          "slack": "ptrelease"
         },
         {
           "name": "Matthew Pease",
           "role": "Technical Architect",
-          "email": "matthew.pease@digital.landregistry.gov.uk",
-          "twitter": "skablam",
+          "email": "matthew.pease",
+          "twitter": "Skablaam",
           "github": "skablam",
-          "slack": "skablam"
+          "slack": "mpease"
         }
       ]
     },
     {
-      "name": "Badger",
+      "name": "Epsilon",
       "project": "P316 Workflow",
       "phase": "Alpha",
       "members": [
         {
-          "name": "Matthew Shaw",
-          "role": "Developer",
-          "email": "matthew.shaw@digital.landregistry.gov.uk",
-          "twitter": "matthew-shaw",
-          "github": "matthew-shaw",
-          "slack": "matthew-shaw"
-        },
-        {
           "name": "Simon Tsang",
           "role": "Developer",
-          "email": "simon.tsang@digital.landregistry.gov.uk",
-          "twitter": "milkypoo",
-          "github": "milkypoo",
-          "slack": "milkypoo"
+          "email": "simon.tsang",
+          "github": "tsangsimon",
+          "slack": "simontsang"
         },
         {
           "name": "Paul Trelease",
           "role": "Developer",
-          "email": "paul.trelease@digital.landregistry.gov.uk",
-          "twitter": "treacle",
-          "github": "treacle",
-          "slack": "treacle"
-        },
-        {
-          "name": "Matthew Pease",
-          "role": "Technical Architect",
-          "email": "matthew.pease@digital.landregistry.gov.uk",
-          "twitter": "skablam",
-          "github": "skablam",
-          "slack": "skablam"
+          "email": "paul.trelease",
+          "twitter": "PaulTrelease",
+          "github": "ptrelease",
+          "slack": "ptrelease"
         }
       ]
     }

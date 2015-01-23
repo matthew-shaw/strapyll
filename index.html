@@ -1,21 +1,31 @@
 ---
 layout: navbar_sidebar
 ---
-<h1 class="page-header">TeamST<i class="fa fa-star"></i>R</h1>
-
 {% for team in site.data.teams.teams %}
-  <h1>{{ team.name }} Team</h1>
-  <p>{{ team.project }}</p>
-  <p>{{ team.phase }}</p>
+<h1><i class="fa fa-users fa-fw"></i> {{ team.name }}</h1>
+<p>Project: {{ team.project }}</p>
+<p>Phase: {{ team.phase }}</p>
+{% if team.email %}<p>Email: <a href="mailto:{{ team.email }}{{ site.email_domain }}"><i class="fa fa-envelope fa-fw"></i></a></p>{% endif %}
+{% if team.slack %}<p>Slack Channel: <a href="{{ site.slack_url }}{{ team.slack }}"><i class="fa fa-slack fa-fw"></i></a></p>{% endif %}
 
-  <h2>Members</h2>
-  {% for member in team.members %}
-    <p>{{ member.name }}</p>
-    <p>{{ member.role }}</p>
-    <p>{{ member.email }}</p>
-    <p>{{ member.twitter }}</p>
-    <p>{{ member.github }}</p>
-    <p>{{ member.slack }}</p>
-    <br/>
+<h2>Members ({{ team.members | size }})</h2>
+<div class="row">
+  {% assign members = team.members | sort: "name" %}
+  {% for member in members %}
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong><i class="fa fa-user fa-fw"></i> {{ member.name }}</strong></h3>
+        <h3 class="panel-title">{{ member.role }}</h3>
+      </div>
+      <div class="panel-body">
+        <h4>{% if member.email %}<a href="mailto:{{ member.email }}{{ site.email_domain }}"><i class="fa fa-envelope fa-fw"></i></a>{% endif %}
+          {% if member.github %}<a href="{{ site.github_url }}{{ member.github }}"><i class="fa fa-github fa-fw"></i></a>{% endif %}
+          {% if member.slack %}<a href="{{ site.slack_url }}@{{ member.slack }}"><i class="fa fa-slack fa-fw"></i></a>{% endif %}
+          {% if member.twitter %}<a href="{{ site.twitter_url }}{{ member.twitter }}"><i class="fa fa-twitter fa-fw"></i></a>{% endif %}</h4>
+      </div>
+    </div>
+  </div>
   {% endfor %}
+</div><hr>
 {% endfor %}

@@ -6,6 +6,11 @@ description:
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 theme: bootstrap
+email_domain: "@digital.landregistry.gov.uk"
+github_url: https://github.com/
+twitter_url: https://twitter.com/
+slack_url: https://landregistry.slack.com/messages/
+
 
 
 # Build settings
