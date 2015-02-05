@@ -10,8 +10,8 @@ layout: navbar_sidebar
     {% when 'Beta' %} <span class="label label-primary">{{ team.phase }}</span>
     {% when 'Live' %} <span class="label label-success">{{ team.phase }}</span>
   {% endcase %}</h4>
-{% if team.email %}<p>Email: <a href="mailto:{{ team.email }}{{ site.email_domain }}"><i class="fa fa-envelope fa-fw"></i></a></p>{% endif %}
-{% if team.slack %}<p>Slack Channel: <a href="{{ site.slack_url }}{{ team.slack }}"><i class="fa fa-slack fa-fw"></i></a></p>{% endif %}
+{% if team.email %}<h4>Email: <a href="mailto:{{ team.email }}{{ site.email_domain }}"><i class="fa fa-envelope fa-fw"></i></a></h4>{% endif %}
+{% if team.slack %}<h4>Slack Channel: <a href="{{ site.slack_url }}{{ team.slack }}"><i class="fa fa-slack fa-fw"></i></a></h4>{% endif %}
 
 <h2>Members <span class="badge">{{ team.members | size }}</span></h2>
 <div class="row">
